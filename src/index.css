@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+/* Our Dynamic Branding Layer 
+  These variables will be updated via React when a client logs in 
+*/
+@theme {
+  --color-brand-primary: var(--client-primary, #2563eb); /* Default Blue */
+  --color-brand-secondary: var(--client-secondary, #475569); /* Default Slate */
+  --color-brand-accent: var(--client-accent, #f59e0b); /* Default Amber */
+  --color-sidebar: var(--client-sidebar, #1e293b);
+}
