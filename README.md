@@ -1,4 +1,4 @@
-Generic PMIS Front End
+Project Template (clean)
 
 Versions -
 React: 19.2.4
