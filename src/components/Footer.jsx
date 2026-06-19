@@ -216,7 +216,7 @@ export default function Footer({ onProductClick }) {
                     onMouseLeave={e => e.currentTarget.style.color = '#7A8499'}
                   >
                     <LucideIcons.Mail className="w-3.5 h-3.5 flex-shrink-0" style={{ color: '#5B4FE8' }} />
-                    Ashutosh.Rai1@in.ey.com
+                    Tushar.Deep@in.ey.com
                   </a>
                 </li>
                 <li>

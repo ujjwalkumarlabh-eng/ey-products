@@ -28,7 +28,7 @@ const leaders = [
   {
     name: "Saurav Acharya",
     role: "Senior Manager",
-    tenure: "8+ years",
+    tenure: "15+ years",
     domain: "Cross-functional Delivery",
     bio: "Drives successful project outcomes across urban planning, telecommunications, and tourism, leading cross-functional teams.",
     initials: "SA",
