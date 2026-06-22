@@ -54,7 +54,7 @@ export default function Footer({ onProductClick }) {
           </div>
 
           <a
-            href="mailto:Ashutosh.Rai1@in.ey.com"
+            href="mailto:Tushar.Deep@in.ey.com"
             className="group inline-flex items-center gap-2 px-6 py-3 rounded-xl text-gray-900 text-sm font-bold bg-yellow-400 hover:bg-yellow-300 transition-all"
           >
             Request a Demo
@@ -141,11 +141,11 @@ export default function Footer({ onProductClick }) {
               <ul className="space-y-3">
                 <li>
                   <a
-                    href="mailto:Ashutosh.Rai1@in.ey.com"
+                    href="mailto:Tushar.Deep@in.ey.com"
                     className="inline-flex items-center gap-2.5 text-sm text-gray-400 hover:text-yellow-400 transition-all"
                   >
                     <LucideIcons.Mail className="w-3.5 h-3.5 flex-shrink-0 text-yellow-400" />
-                    Ashutosh.Rai1@in.ey.com
+                    Tushar.Deep@in.ey.com
                   </a>
                 </li>
                 <li>
