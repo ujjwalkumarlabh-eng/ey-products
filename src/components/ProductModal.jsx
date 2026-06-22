@@ -22,22 +22,22 @@ export default function ProductModal({ product, onClose }) {
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.95, y: 20 }}
           onClick={(e) => e.stopPropagation()}
-          className="bg-white rounded-3xl max-w-6xl w-full max-h-[90vh] overflow-y-auto"
+          className="bg-gray-950 rounded-3xl max-w-6xl w-full max-h-[90vh] overflow-y-auto border border-gray-800"
         >
           <div className="p-6 md:p-8">
             <div className="flex items-start justify-between mb-6">
               <div className="flex items-center gap-4">
-                <div className="bg-yellow-100 rounded-xl p-4">
-                  <IconComponent className="text-yellow-600 w-8 h-8" />
+                <div className="bg-yellow-400/10 rounded-xl p-4">
+                  <IconComponent className="text-yellow-400 w-8 h-8" />
                 </div>
                 <div>
-                  <h2 className="text-gray-900 text-2xl font-bold">{product.name}</h2>
-                  <p className="text-gray-500 text-sm">{product.category}</p>
+                  <h2 className="text-white text-2xl font-bold">{product.name}</h2>
+                  <p className="text-gray-400 text-sm">{product.category}</p>
                 </div>
               </div>
               <button
                 onClick={onClose}
-                className="text-gray-500 hover:text-gray-800 hover:bg-gray-100 rounded-full p-2 transition-colors"
+                className="text-gray-400 hover:text-white hover:bg-gray-800 rounded-full p-2 transition-colors"
               >
                 <Icons.X className="w-6 h-6" />
               </button>
@@ -45,14 +45,14 @@ export default function ProductModal({ product, onClose }) {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <div className="space-y-6">
-                <p className="text-gray-700 leading-relaxed">{product.description}</p>
+                <p className="text-gray-300 leading-relaxed">{product.description}</p>
 
                 <div>
-                  <h3 className="text-gray-900 font-semibold mb-3">What it does</h3>
+                  <h3 className="text-white font-semibold mb-3">What it does</h3>
                   <ul className="space-y-2">
                     {product.whatItDoes.map((item, i) => (
-                      <li key={i} className="flex items-start gap-2 text-gray-600 text-sm">
-                        <Icons.CheckCircle2 className="w-4 h-4 text-yellow-500 mt-0.5 shrink-0" />
+                      <li key={i} className="flex items-start gap-2 text-gray-400 text-sm">
+                        <Icons.CheckCircle2 className="w-4 h-4 text-yellow-400 mt-0.5 shrink-0" />
                         {item}
                       </li>
                     ))}
@@ -60,11 +60,11 @@ export default function ProductModal({ product, onClose }) {
                 </div>
 
                 <div>
-                  <h3 className="text-gray-900 font-semibold mb-3">Built for</h3>
+                  <h3 className="text-white font-semibold mb-3">Built for</h3>
                   <ul className="space-y-2">
                     {product.builtFor.map((item, i) => (
-                      <li key={i} className="flex items-start gap-2 text-gray-600 text-sm">
-                        <Icons.Target className="w-4 h-4 text-yellow-500 mt-0.5 shrink-0" />
+                      <li key={i} className="flex items-start gap-2 text-gray-400 text-sm">
+                        <Icons.Target className="w-4 h-4 text-yellow-400 mt-0.5 shrink-0" />
                         {item}
                       </li>
                     ))}
@@ -72,10 +72,10 @@ export default function ProductModal({ product, onClose }) {
                 </div>
 
                 <div>
-                  <h3 className="text-gray-900 font-semibold mb-3">Core Strengths</h3>
+                  <h3 className="text-white font-semibold mb-3">Core Strengths</h3>
                   <div className="flex flex-wrap gap-2">
                     {product.coreStrengths.map((strength, i) => (
-                      <span key={i} className="bg-yellow-100 text-yellow-700 text-sm px-3 py-1 rounded-full">
+                      <span key={i} className="bg-yellow-400/10 text-yellow-400 text-sm px-3 py-1 rounded-full border border-yellow-400/20">
                         {strength}
                       </span>
                     ))}
@@ -84,7 +84,7 @@ export default function ProductModal({ product, onClose }) {
               </div>
 
               <div className="space-y-4">
-                <div className="rounded-xl border border-gray-200 overflow-hidden aspect-video">
+                <div className="rounded-xl border border-gray-800 overflow-hidden aspect-video bg-gray-900">
                   {product.screenshots?.[selectedScreenshot] ? (
                     <img
                       src={product.screenshots[selectedScreenshot]}
@@ -92,9 +92,9 @@ export default function ProductModal({ product, onClose }) {
                       className="w-full h-full object-cover"
                     />
                   ) : (
-                    <div className="w-full h-full bg-gray-100 flex flex-col items-center justify-center gap-2">
-                      <Icons.Camera className="text-gray-400 w-12 h-12" />
-                      <span className="text-gray-400">Screenshot {selectedScreenshot + 1}</span>
+                    <div className="w-full h-full bg-gray-900 flex flex-col items-center justify-center gap-2">
+                      <Icons.Camera className="text-gray-600 w-12 h-12" />
+                      <span className="text-gray-600">Screenshot {selectedScreenshot + 1}</span>
                     </div>
                   )}
                 </div>
@@ -103,13 +103,13 @@ export default function ProductModal({ product, onClose }) {
                     <button
                       key={i}
                       onClick={() => setSelectedScreenshot(i)}
-                      className={`rounded-lg border overflow-hidden aspect-video ${selectedScreenshot === i ? 'border-yellow-500 ring-2 ring-yellow-200' : 'border-gray-200'}`}
+                      className={`rounded-lg border overflow-hidden aspect-video ${selectedScreenshot === i ? 'border-yellow-400 ring-2 ring-yellow-400/20' : 'border-gray-800'}`}
                     >
                       {screenshot ? (
                         <img src={screenshot} alt={`Thumbnail ${i + 1}`} className="w-full h-full object-cover" />
                       ) : (
-                        <div className="w-full h-full bg-gray-100 flex items-center justify-center">
-                          <Icons.Camera className="text-gray-400 w-6 h-6" />
+                        <div className="w-full h-full bg-gray-800 flex items-center justify-center">
+                          <Icons.Camera className="text-gray-600 w-6 h-6" />
                         </div>
                       )}
                     </button>
