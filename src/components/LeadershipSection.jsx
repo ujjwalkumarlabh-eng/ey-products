@@ -7,6 +7,15 @@ import srManagerImg from '../assets/leaders/Sr_Manager.jpeg';
 
 const leaders = [
   {
+    name: "Mr Amit V Singh",
+    role: "Principal Partner",
+    tenure: "20+ years",
+    domain: "Digital Transformation",
+    bio: "Technology consulting leader delivering large-scale programs across urban planning, telecom, and tourism sectors.",
+    initials: "AVS",
+    image: partnerImg,
+  },
+  {
     name: "Ashutosh K Rai",
     role: "Director — Technology Consulting",
     tenure: "15+ years",
@@ -23,15 +32,6 @@ const leaders = [
     bio: "15+ years of experience in GovTech and enterprise software, driving technology strategy and solution delivery.",
     initials: "MN",
     image: director2Img,
-  },
-  {
-    name: "Mr Amit V Singh",
-    role: "Principal Partner",
-    tenure: "20+ years",
-    domain: "Digital Transformation",
-    bio: "Technology consulting leader delivering large-scale programs across urban planning, telecom, and tourism sectors.",
-    initials: "AVS",
-    image: partnerImg,
   },
   {
     name: "Saurav Acharya",

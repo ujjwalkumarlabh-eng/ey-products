@@ -1,7 +1,7 @@
 import * as LucideIcons from 'lucide-react';
 import { motion } from 'framer-motion';
 import { products } from '../data/products';
-import eyLogo from '../assets/Logo-Ernst-Young-dark.jpg';
+import eyLogo from '../assets/ey-logo-footer.png';
 
 const SOCIAL_LINKS = [
   { icon: LucideIcons.Link, href: '#', label: 'LinkedIn' },
